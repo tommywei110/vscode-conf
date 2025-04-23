@@ -1,0 +1,69 @@
+{
+  "files.autoSave": "onFocusChange",
+  "[yaml]": {
+    "editor.formatOnSave": false
+  },
+  "editor.lineNumbers": "relative",
+  "editor.guides.bracketPairs": true,
+  "git.autofetch": true,
+  "typescript.tsserver.maxTsServerMemory": 8192,
+  "typescript.tsserver.nodePath": "node --max-old-space-size=8192",
+  "terminal.integrated.scrollback": 5000,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "githubPullRequests.pullBranch": "never",
+  "editor.cursorSmoothCaretAnimation": "on",
+  // vim stuff
+  "vim.useSystemClipboard": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["s"],
+      "commands": ["leap.find"]
+    },
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.rename"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "p"],
+      "after": ["p", "g", "v", "y"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": [
+        "workbench.view.explorer" // Command to open AND focus the explorer
+      ],
+      "when": "!sideBarVisible && editorTextFocus"
+    }
+  ],
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "editor.fontFamily": "Monaspace Krypton",
+  "editor.fontSize": 13,
+  "editor.cursorSurroundingLines": 8,
+  "search.followSymlinks": false,
+  "editor.accessibilitySupport": "off",
+  "explorer.confirmDelete": false,
+  "workbench.colorTheme": "Tokyo Night Light",
+  "typescript.tsserver.log": "off",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "datadog.telemetry.setup.enableTelemetry": "enabled",
+  "editor.codeLensFontFamily": "Monaspace Krypton",
+  "workbench.productIconTheme": "fluent-icons",
+  "bazel.enableCodeLens": true
+}

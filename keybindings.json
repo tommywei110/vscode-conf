@@ -1,0 +1,56 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "space e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "runCommands",
+    "args": {
+      "commands": ["list.select", "workbench.action.closeSidebar"]
+    },
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "list.select", // Just open/expand/collapse
+    // WHEN: Explorer has focus, not renaming, AND the item IS a folder
+    "when": "filesExplorerFocus && !inputFocus && explorerResourceIsFolder"
+  },
+  {
+    "key": "shift+h",
+    "command": "workbench.action.previousEditorInGroup",
+    "when": "editorTextFocus && !inQuickOpen && !suggestWidgetVisible && !findWidgetVisible && vim.mode == 'Normal'"
+  },
+  {
+    "key": "shift+l",
+    "command": "workbench.action.nextEditorInGroup",
+    "when": "editorTextFocus && !inQuickOpen && !suggestWidgetVisible && !findWidgetVisible && vim.mode == 'Normal'"
+  },
+  {
+    "key": "cmd+i",
+    "command": "composerMode.agent"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft",
+    "when": "editorTextFocus && !inQuickOpen && !suggestWidgetVisible && !findWidgetVisible && vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight",
+    "when": "editorTextFocus && !inQuickOpen && !suggestWidgetVisible && !findWidgetVisible && vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown",
+    "when": "editorTextFocus && !inQuickOpen && !suggestWidgetVisible && !findWidgetVisible && vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp",
+    "when": "editorTextFocus && !inQuickOpen && !suggestWidgetVisible && !findWidgetVisible && vim.mode == 'Normal'"
+  }
+]
